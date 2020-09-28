@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+document.write('<h1 align="center">Squares and Cubes of the numbers from 0 to 50</h1>');
+document.write('<center><table width="30%" border="1" bgcolor="black">');
+document.write( "<tr> <th>Number</th><th>Square</th><th>Cube</th><th>Square Root</th><th>Cube Root</th></tr>"); for (var n=0; n<=50; n++)
+{
+document.write("<tr><td>"+n+"</td><td>"+ n*n +"</td><td>"+ n*n*n +"</td><td>"+Math.sqrt(n)+"</td><td>"+Math.cbrt(n)+"</td></tr>"); }
+document.writer("</table>");
+</script>
+<style>
+table{
+    background-color: green;
+    border: 2px pink;
+}
+tr:nth-child(odd){
+    background-color: red;
+}
+th,td{
+    border: none;
+}
+tr:hover{
+    background-color: purple;
+}
+</style>
+</head>
+<body style="background-color: skyblue;">
+</body>
+</html>       
